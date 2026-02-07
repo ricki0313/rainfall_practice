@@ -21,9 +21,33 @@
     - sill: the population variance (資料變異量上限)
     - range: the distance with less correlation (空間相關性幾乎消失的距離，超過此range可視為獨立)
     - nugget: uncertainly as distance is zero (距離趨於0時仍存在的不確定性)
-
 - Simple Kriging
 
+- training 1: 
+    sill_0 = np.nanvar(z_res)
+    range_0 = 0.25 * (bin_center.max() - bin_center.min())  
+    nug_0 = 0
 
+    sill_opt = 13576.1648
+    range_opt = 2.3337
+    nug_opt = 0
+
+- training 2:
+    sill_0 = np.nanvar(z_res)
+    range_0 = 0.25 * (bin_center.max() - bin_center.min())  
+    nug_0 = 3000
+
+    sill_opt = 2823075.6513
+    range_opt = 791.9788
+    nug_opt = 3000
+
+- training 3:
+    sill_0 = np.nanvar(z_res)
+    range_0 = 0.25 * (bin_center.max() - bin_center.min())  
+    nug_0 = 1000
+
+    sill_opt = 10158.9674
+    range_opt = 1.8155
+    nug_opt = 1000
 
 
