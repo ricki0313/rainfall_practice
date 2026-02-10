@@ -13,7 +13,7 @@ The datasets used in this project are provided by the Central Weather Administra
 Due to file size and licensing considerations, raw data and generated feature files are not included in this repository.
 
 To reproduce the features:
-1. Download the **CWA automatic station hourly dataset in MH (Multifield Hourly) format**, preprocessed and provided by the author, and place the raw `.txt` file under `data/raw/`.
+1. Download the **CWA automatic station hourly dataset in MH (Multifield Hourly) format**, preprocessed and provided by the author (Raw data provided by the author is not included in this repository due to data security considerations), and place the raw `.txt` file under `data/raw/`.
 2. Download the **CWA station metadata in JSON format** and place the raw file under `data/raw/`:
    https://opendata.cwa.gov.tw/dataset/observation/O-A0002-001
 3. Run the data processing and visualization notebooks in order.
